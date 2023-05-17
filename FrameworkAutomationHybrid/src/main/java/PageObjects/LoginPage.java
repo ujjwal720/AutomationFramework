@@ -14,28 +14,27 @@ public class LoginPage {
 	 * project.
 	 */
 	WebDriver driver;
-	
-	
-	@FindBy(xpath="//input[@type='email']")
+
+	@FindBy(xpath = "//input[@type='email']")
 	WebElement email;
+	
+	@FindBy(xpath="//input[@type='password']")
+	WebElement password;
 
 	public LoginPage(WebDriver driver) {
-
 		this.driver = driver;
-
 		PageFactory.initElements(driver, this);
+	}
+
+	public void enterEmail(String emailAddress) {
+		email.sendKeys(emailAddress);
 
 	}
-	
-	
-	public void email() {
+
+	public void enterpassword(String pas) {
 		
-		
+		password.sendKeys(pas);
+
 	}
-	
-	
-	
-	
-	
 
 }
