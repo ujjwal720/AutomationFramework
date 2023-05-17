@@ -44,16 +44,20 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void enterEmail(String emailAddress) {
-		emailAddress = a.getProperty("username");
+	public void enterEmail() {
+		String emailAddress = a.getProperty("username");
 		email.sendKeys(emailAddress);
 
 	}
 
-	public void enterpassword(String pas) {
-		pas = a.getProperty("password");
+	public void enterpassword() {
+		String pas = a.getProperty("password");
 
 		password.sendKeys(pas);
+
+	}
+
+	public void submitbutton() {
 
 	}
 
