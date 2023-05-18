@@ -33,6 +33,9 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@type='password']")
 	WebElement password;
 
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement submit;
+
 	public LoginPage(WebDriver driver) throws IOException {
 		this.driver = driver;
 		String propertiesFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\Creds.properties";
@@ -59,6 +62,8 @@ public class LoginPage {
 	}
 
 	public void submitbutton() {
+
+		submit.click();
 
 	}
 
