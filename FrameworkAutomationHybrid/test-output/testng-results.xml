@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-18T15:02:47 IST" name="Default suite" finished-at="2023-05-18T15:03:01 IST" duration-ms="14201">
+  <suite started-at="2023-05-18T16:11:19 IST" name="Default suite" finished-at="2023-05-18T16:11:48 IST" duration-ms="28347">
     <groups>
     </groups>
-    <test started-at="2023-05-18T15:02:47 IST" name="Default test" finished-at="2023-05-18T15:03:01 IST" duration-ms="14201">
+    <test started-at="2023-05-18T16:11:19 IST" name="Default test" finished-at="2023-05-18T16:11:48 IST" duration-ms="28347">
       <class name="Stanalone.FirstTest">
-        <test-method signature="test1()[pri:0, instance:Stanalone.FirstTest@65466a6a]" started-at="2023-05-18T15:02:47 IST" name="test1" finished-at="2023-05-18T15:03:01 IST" duration-ms="14131" status="PASS">
+        <test-method signature="test1()[pri:0, instance:Stanalone.FirstTest@65466a6a]" started-at="2023-05-18T16:11:19 IST" name="test1" description="To Test the Login functionality of the following user" finished-at="2023-05-18T16:11:39 IST" duration-ms="19212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:Stanalone.FirstTest@65466a6a]" started-at="2023-05-18T16:11:39 IST" name="test2" finished-at="2023-05-18T16:11:48 IST" duration-ms="9069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
       </class> <!-- Stanalone.FirstTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
