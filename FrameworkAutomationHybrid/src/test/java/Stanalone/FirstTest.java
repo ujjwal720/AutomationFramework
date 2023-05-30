@@ -17,7 +17,7 @@ public class FirstTest extends TestBase{
 
 	Logger loggers = Logger.getLogger(FirstTest.class);
 	
-	      WebDriver driver=TestBase.driver;
+	      WebDriver driver=TestBase.setup();
 
 	@Test(description = "To Test the Login functionality of the following user", priority = 2, singleThreaded = true)
 	public void test1() throws IOException {

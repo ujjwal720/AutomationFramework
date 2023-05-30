@@ -2,19 +2,52 @@
 <testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-19T17:54:48 IST" name="Default suite" finished-at="2023-05-19T17:54:48 IST" duration-ms="86">
+  <suite started-at="2023-05-19T18:20:23 IST" name="Default suite" finished-at="2023-05-19T18:20:39 IST" duration-ms="16585">
     <groups>
     </groups>
-    <test started-at="2023-05-19T17:54:48 IST" name="Default test" finished-at="2023-05-19T17:54:48 IST" duration-ms="86">
+    <test started-at="2023-05-19T18:20:23 IST" name="Default test" finished-at="2023-05-19T18:20:39 IST" duration-ms="16585">
       <class name="Stanalone.FirstTest">
-        <test-method signature="test2()[pri:1, instance:Stanalone.FirstTest@79b06cab]" started-at="2023-05-19T17:54:48 IST" name="test2" finished-at="2023-05-19T17:54:48 IST" duration-ms="13" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="test1()[pri:2, instance:Stanalone.FirstTest@31ee96f4]" started-at="2023-05-19T18:20:23 IST" name="test1" description="To Test the Login functionality of the following user" finished-at="2023-05-19T18:20:39 IST" duration-ms="16493" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+              <![CDATA[Unable to locate element: //input[@type='email']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LP95', ip: '172.16.2.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18924, moz:profile: C:\Users\UJJWAL~1.SHR\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8ba1e768-09ee-4922-b907-05c500e49604
+*** Element info: {Using=xpath, value=//input[@type='email']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at Stanalone.FirstTest.test2(FirstTest.java:42)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@type='email']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LP95', ip: '172.16.2.203', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230511191846, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18924, moz:profile: C:\Users\UJJWAL~1.SHR\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8ba1e768-09ee-4922-b907-05c500e49604
+*** Element info: {Using=xpath, value=//input[@type='email']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.sendKeys(Unknown Source)
+at PageObjects.LoginPage.enterEmail(LoginPage.java:53)
+at Stanalone.FirstTest.test1(FirstTest.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,10 +78,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
+        </test-method> <!-- test1 -->
       </class> <!-- Stanalone.FirstTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -10,25 +10,30 @@ public class TestBase {
 
 	public static WebDriver driver;
 
-	String browser = "chrome";
+	static String browser = "firefox";
 
-	public WebDriver setup() {
+	public static WebDriver setup() {
 
-		if (browser.equalsIgnoreCase("Chrome")) {
+		try {
+			if (browser.equalsIgnoreCase("Chrome")) {
 
-			WebDriverManager.chromedriver().setup();
-			 driver = new ChromeDriver();
-			driver.manage().window().maximize();
+				WebDriverManager.chromedriver().setup();
+				 driver = new ChromeDriver();
+				driver.manage().window().maximize();
 
-		}
+			}
 
-		else if (browser.equals("firefox")) {
-			
-			WebDriverManager.firefoxdriver().setup();
-		 driver=new FirefoxDriver();
-			driver.manage().window().maximize();
-			
+			else if (browser.equals("firefox")) {
+				
+				WebDriverManager.firefoxdriver().setup();
+			 driver=new FirefoxDriver();
+				driver.manage().window().maximize();
+				
 
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		return driver;
