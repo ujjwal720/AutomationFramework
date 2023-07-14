@@ -5,7 +5,7 @@
     <classes>
       <class name="Stanalone.FirstTest">
         <methods>
-          <include name="test1"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- Stanalone.FirstTest -->
     </classes>

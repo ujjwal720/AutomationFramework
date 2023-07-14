@@ -27,6 +27,8 @@ public class inventorymanagment3 {
 	}
 
 	public void getcount() {
+		
+		
 
 	}
 
