@@ -5,7 +5,11 @@
     <classes>
       <class name="Stanalone.FirstTest">
         <methods>
+          <include name="initialize"/>
           <include name="test3"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="test4"/>
         </methods>
       </class> <!-- Stanalone.FirstTest -->
     </classes>
